@@ -20,6 +20,10 @@ a:hover {
   color: unset;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 10px 20px;
@@ -34,8 +38,8 @@ body {
   flex-direction: row;
 }
 .main-container .personal-container {
-  width: 550px;
-  min-width: 10px;
+  width: 30vw;
+  min-width: 450px;
   background-color: #595959;
   padding: 0px 20px;
 }
@@ -124,6 +128,7 @@ body {
   font-size: 28px;
   color: #fff;
   gap: 25px;
+  overflow-x: hidden;
 }
 .main-container .personal-container .social-container hr {
   background-color: #FFFFFF;
@@ -212,6 +217,11 @@ body {
   justify-content: space-between;
   gap: 20px;
   padding: 0px 50px;
+}
+@media (max-width: 1599px) {
+  .main-container .personal-container .lang-container .lang-circle-container {
+    justify-content: center;
+  }
 }
 @keyframes growProgressBar {
   0%, 33% {
