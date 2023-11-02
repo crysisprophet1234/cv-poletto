@@ -1,0 +1,181 @@
+html,
+body {
+    height: 290mm;
+    width: 210mm;
+    background: linear-gradient(to right, #f6f6f6 0%, #f6f6f6 35%, #ffffff 35%, #ffffff 100%);
+    margin: auto;
+}
+
+
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29cm;
+}
+
+@media print {
+
+    body,
+    page {
+        margin: 0;
+        box-shadow: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+
+    margin-bottom: 0 !important;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.main-page {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+
+}
+
+.name-badge {
+
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #f6f6f6 0%, #f6f6f6 35%, #ffffff 35%, #ffffff 100%);
+
+}
+
+.name-badge .name-container {
+
+    height: 90%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #212529;
+    color: #212529;
+    font-size: 1rem;
+    background-color: #ffffff;
+
+}
+
+.section-left {
+
+    width: 35%;
+    height: 100%;
+    background-color: #f6f6f6;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    font-size: 16px;
+
+}
+
+.section-right {
+
+    width: 65%;
+    height: 100%;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: 16px;
+
+}
+
+.info-container hr {
+
+    background-color: black;
+    border: 0;
+    opacity: 1;
+    height: 2px;
+    width: 100% !important;
+    margin: 0;
+
+}
+
+.info-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.85em !important;
+
+}
+
+.info-container h3 {
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+.info-container h4 {
+
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 550;
+
+}
+
+.info-container p, a {
+
+    font-size: 13.5px;
+
+}
+
+.info-container .skill-dots {
+
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    font-size: 18px;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.skill-dots .dot {
+
+    height: 8px;
+    width: 8px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    background-color: black;
+
+}
+
+.skill-dots .dot.empty {
+
+    background-color: transparent;
+
+}
+
+.section-right .text-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.85em !important;
+
+}
