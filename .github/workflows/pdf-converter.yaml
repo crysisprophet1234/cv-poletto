@@ -13,11 +13,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Convert HTML to PDF
         uses: fifsky/html-to-pdf-action@master
         with:
-          htmlFile: index.html
-          outputFile: resume.pdf
+          htmlFile: ../../index.html
+          outputFile: ./public/resume.pdf
           pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
 
       - name: Upload PDF artifact
